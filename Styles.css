@@ -19,6 +19,7 @@ body {
     margin: 0;
     height: 48px;
 }
+
 .navbarmenu {
     width: 100%;
     height: 48px;
@@ -151,6 +152,7 @@ li {
     max-width: 1252px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 300px;
 }
 
 #afundtittle {
@@ -471,6 +473,178 @@ li {
     }
 }
 
+/* Highlight Section
+-------------------------------------------------------------------*/
+@font-face {
+    font-family: tnw;
+    src: url("Audiowide-Regular.ttf");
+  }
+  
+div {
+    margin: 10px auto;
+}
+
+.highlights {
+    position: relative;
+    margin: 10px auto;
+    z-index: 1;
+}
+
+.feature-logo {
+    display: none;
+    font-family: tnw, 'Times New Roman', Times, serif;
+}
+
+.main-feature,
+.sub-feature {
+    height: 150px;
+}
+
+.main-feature h3,
+.sub-feature h3 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.sub-feature {
+    flex-direction: column;
+}
+
+.tnw-card {
+    position: relative;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5)
+}
+
+.tnw-img {
+    width: 100%;
+    height: 100%;
+}
+
+.caption {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: #fff;
+}
+
+.publication,
+span {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+}
+
+/* Media queries for highlights section 
+------------------------------------------------------------------------*/
+@media screen and (min-width: 822px) {
+    div {
+        margin: 0px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .highlights {
+        position: relative;
+        top: 150px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 5px;
+        width: 98%;
+        margin: 0px auto;
+    }
+
+    .main-feature,
+    .sub-feature {
+        height: 100%;
+    }
+
+    .main-feature {
+        height: 400px;
+    }
+
+    .main-feature h3 {
+        font-size: 30px;
+        margin: 0;
+        padding: 5px 0;
+    }
+    
+    .sub-feature h3 {
+        font-size: 22px;
+        margin: 0;
+        padding: 10px 0;
+    }
+    
+    .sub-feature {
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    .publication,
+    span {
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        gap: 5px;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) {
+    .feature-logo {
+        position: absolute;
+        z-index: 9;
+        top: 80px;
+        left: 20px;
+        display: block;
+        font-size: 150px;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        line-height: 30px;
+    }
+
+    .main-feature {
+        height: 500px;
+    }
+
+    .main-feature h3 {
+        font-size: 52px;
+        font-weight: bold;
+        margin: 0;
+        padding: 5px 0;
+        width: 90%;
+    }
+
+    .main-feature h3 {
+        font-size: 52px;
+        margin: 0;
+        padding: 5px 0;
+    }
+    
+    .sub-feature h3 {
+        font-size: 28px;
+        margin: 0;
+        padding: 10px 0;
+        width: 90%;
+    }
+}
+
+
 /* Footer section 
 -------------------------------------------------------------------*/
 .tnw-footer {
@@ -507,11 +681,20 @@ li {
 }
 
 .social-icons li{
-    background-color: #555;
-    padding: 9px;
     margin: 10px;
+}
+
+.social-icons li svg,
+.social-icons li img {
+    padding: 15px;
     border-radius: 50%;
+    background-color: #555;
     border: 2px solid #555;
+}
+
+.social-icons li svg:hover,
+.social-icons li img:hover {
+    background-color: black;
 }
 
 .social-icons a {
@@ -520,14 +703,13 @@ li {
     left: 2px;
 }
 
-.social-icons li:hover {
-    background-color: #000;
-    border-radius: 50%;
-}
-
 .copyright {
     background-color: #000;
     color: #fff;
+    font-size: 12px;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
 }
 
 .menu-links a {
@@ -544,9 +726,20 @@ li {
         width: 90%;
         padding: 10px;
     }
-
-    .social-icons li {
-        background-color: #131313;
+    
+    .social-icons li svg,
+    .social-icons li img {
+        width: 12px;
+        height: 12px;;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #555;
+        border: 2px solid #555;
+    }
+    
+    .social-icons li svg:hover,
+    .social-icons li img:hover {
+        background-color: black;
     }
 
     .footer-menu,

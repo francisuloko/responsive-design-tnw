@@ -73,6 +73,28 @@ body {
   display: inline-block;
 }
 
+.nvaddbar a {
+  color: black;
+}
+
+.tnw-footer a {
+  color: white;
+}
+
+.social-icons a {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+.menu-links a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  margin: 5px;
+}
+
 .dropdown-content a:hover {
   color: white;
 }
@@ -119,10 +141,6 @@ body {
   align-items: center;
   justify-content: center;
   background-color: gold;
-}
-
-.nvaddbar a {
-  color: black;
 }
 
 .menuicon {
@@ -215,7 +233,7 @@ li {
 .pinkbartext {
   font-weight: bold;
   font-family: Avalon, sans-serif;
-  font-size: 15PX;
+  font-size: 15px;
   color: black;
   text-align: left;
 }
@@ -254,7 +272,7 @@ li {
 
 .pinkbartext2 {
   font-family: Avalon, sans-serif;
-  font-size: 13PX;
+  font-size: 13px;
   color: rgb(77, 77, 77);
   text-align: left;
   margin-bottom: 15px;
@@ -300,6 +318,30 @@ li {
     width: 100%;
   }
 
+  .topmenul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+    justify-content: space-between;
+    width: 370px;
+  }
+
+  .topmenur a {
+    color: rgb(204, 204, 204);
+  }
+
+  .eventscontent a {
+    border-top: 1px solid rgb(170, 170, 170);
+    text-align: left;
+    color: grey;
+    padding: 10px;
+    width: 115px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
   .centermenu a:hover {
     color: black;
   }
@@ -330,16 +372,6 @@ li {
     padding: 0 10px 0 10px;
   }
 
-  .topmenul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 0;
-    font-size: 13px;
-    justify-content: space-between;
-    width: 370px;
-  }
-
   .topmenur {
     display: flex;
     padding: 0;
@@ -351,11 +383,7 @@ li {
   }
 
   .topmenul a {
-    color:#b9b9b9;
-  }
-
-  .topmenur a {
-    color: rgb(204, 204, 204);
+    color: #b9b9b9;
   }
 
   .nvaddbar {
@@ -369,7 +397,11 @@ li {
     text-align: center;
   }
 
-  .dropbtn, .dropdown {
+  .dropbtn {
+    height: 80px;
+  }
+
+  .dropdown {
     height: 80px;
   }
 
@@ -389,17 +421,8 @@ li {
     display: none;
   }
 
-  .eventscontent a {
-    border-top: 1px solid rgb(170, 170, 170);
-    text-align: left;
-    color: grey;
-    padding: 10px;
-    width: 115px;
-    text-decoration: none;
-    display: inline-block;
-  }
-
-  .eventdropdown:hover .eventscontent {
+  .eventscontent:hover {
+    color: white;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -407,8 +430,7 @@ li {
     margin-top: 20px;
   }
 
-  .eventscontent:hover {
-    color: white;
+  .eventdropdown:hover .eventscontent {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -487,8 +509,13 @@ div {
 .highlights {
   position: relative;
   top: 100px;
-  margin: 10px auto;
+  width: auto;
+  margin: 10px;
   z-index: 1;
+  border: 1px solid red;
+  padding: 0;
+  flex-grow: 1;
+  height: 750px;
 }
 
 .feature-logo {
@@ -498,7 +525,7 @@ div {
 
 .main-feature,
 .sub-feature {
-  height: 150px;
+  height: 250px;
 }
 
 .main-feature h3,
@@ -560,20 +587,16 @@ span {
   .highlights {
     position: relative;
     top: 150px;
+    margin: 10px;
+    height: 480px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 5px;
-    width: 98%;
-    margin: 0 auto;
-  }
-
-  .main-feature,
-  .sub-feature {
-    height: 100%;
   }
 
   .main-feature {
-    height: 400px;
+    height: 480px;
+    max-height: 480px;
   }
 
   .main-feature h3 {
@@ -591,6 +614,9 @@ span {
   .sub-feature {
     gap: 5px;
     flex-direction: column;
+    padding: 0;
+    height: 480px;
+    max-height: 480px;
   }
 
   .publication,
@@ -616,9 +642,24 @@ span {
     margin: 0;
     line-height: 30px;
   }
+  
+  .sub-feature .tnw-card{
+      height: 248px;
+  }
+
+  .highlights {
+    height: 500px;
+    max-height: 500px;
+  }
 
   .main-feature {
     height: 500px;
+    max-height: 500px;
+  }
+
+  .sub-feature {
+    height: 500px;
+    max-height: 500px;
   }
 
   .main-feature h3 {
@@ -647,8 +688,8 @@ span {
   background-color: #000;
 }
 
-.tnw-footer a {
-  color: white;
+.social-icons li {
+  margin: 10px;
 }
 
 .tnw-footer ul li {
@@ -672,10 +713,6 @@ span {
   background-color: #131313;
 }
 
-.social-icons li {
-  margin: 10px;
-}
-
 .social-icons li svg,
 .social-icons li img {
   padding: 15px;
@@ -689,12 +726,6 @@ span {
   background-color: black;
 }
 
-.social-icons a {
-  position: relative;
-  top: 2px;
-  left: 2px;
-}
-
 .copyright {
   background-color: #000;
   color: #fff;
@@ -702,14 +733,6 @@ span {
   width: 90%;
   padding: 10px;
   margin: 10px auto;
-}
-
-.menu-links a {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'Courier New', Courier, monospace;
-  color: whitesmoke;
-  margin: 5px;
 }
 
 @media screen and (max-width: 822px) {

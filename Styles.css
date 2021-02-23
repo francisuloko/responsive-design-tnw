@@ -51,7 +51,7 @@ body {
 .dropdown {
   position: relative;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   text-align: center;
   height: 48px;
   width: 150px;
@@ -70,6 +70,10 @@ body {
   text-decoration: none;
   display: inline-block;
 }
+
+.nvaddbar a {
+    color: black;
+  }
 
 .dropdown-content a:hover {
   color: white;
@@ -118,10 +122,6 @@ body {
   background-color: gold;
 }
 
-.nvaddbar a {
-  color: black;
-}
-
 .menuicon {
   display: flex;
   flex-direction: row;
@@ -162,6 +162,7 @@ li {
   #navigationmenu {
     display: none;
   }
+
   .menuicon {
     display: flex;
     flex-direction: row;
@@ -183,7 +184,7 @@ li {
     color: white;
     padding: 0 10px 0 10px;
   }
-  
+
   .topmenul {
     display: flex;
     flex-direction: row;
@@ -192,7 +193,7 @@ li {
     font-size: 13px;
     justify-content: space-between;
     width: 370px;
-   }
+  }
 
   .topmenur {
     display: flex;
@@ -218,9 +219,13 @@ li {
     flex-direction: column;
     text-align: center;
   }
-    
-  .dropbtn,.dropdown {
+
+  .dropbtn {
     height: 80px;
+  }
+
+  .dropdown {
+      height: 80px;
   }
 
   .dropdown:hover .dropdown-content {
@@ -278,11 +283,10 @@ li {
   .topmenur li a:hover {
     color: white;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
-    .dropdown {
-        display: none;
-    }
+  .dropdown {
+    display: none;
+  }
 }

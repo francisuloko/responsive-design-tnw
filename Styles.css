@@ -67,10 +67,6 @@ body {
     text-decoration: none;
     display: inline-block;
 }
-  
-.nvaddbar {
-    height: 35px;
-}
 
 .dropdown-content a:hover {
     color: white;
@@ -191,7 +187,7 @@ li {
         display: flex;
         flex-direction: row;
         list-style: none;
-        padding: 0px;
+        padding: 0;
         font-size: 13px;
         justify-content: space-between;
         width: 370px;
@@ -208,7 +204,7 @@ li {
     }
 
     .topmenul a {
-        color:#b9b9b9;
+        color: #b9b9b9;
     }
 
     .topmenur a {
@@ -222,12 +218,12 @@ li {
         text-align: center;
     }
     
-    .dropbtn, .dropdown {
+    .dropbtn,.dropdown {
         height: 80px;
     }
 
     .dropdown:hover .dropdown-content {
-        display: none; 
+        display: none;
     }
 
     .eventdropdown {
@@ -287,5 +283,4 @@ li {
     .dropdown {
         display: none;
     }
-
 }

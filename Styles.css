@@ -342,6 +342,10 @@ li {
     display: inline-block;
   }
 
+  .topmenul a {
+    color: #b9b9b9;
+  }
+
   .centermenu a:hover {
     color: black;
   }
@@ -380,10 +384,6 @@ li {
     font-size: 13px;
     justify-content: space-between;
     width: 170px;
-  }
-
-  .topmenul a {
-    color: #b9b9b9;
   }
 
   .nvaddbar {
@@ -512,7 +512,6 @@ div {
   width: auto;
   margin: 10px;
   z-index: 1;
-  border: 1px solid red;
   padding: 0;
   flex-grow: 1;
   height: 750px;
@@ -643,8 +642,8 @@ span {
     line-height: 30px;
   }
   
-  .sub-feature .tnw-card{
-      height: 248px;
+  .sub-feature .tnw-card {
+    height: 248px;
   }
 
   .highlights {

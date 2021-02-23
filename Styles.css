@@ -1,294 +1,300 @@
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-.head {
-  position: fixed;
-  width: 100%;
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
 }
 
 body {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
-
 .navbar {
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  height: 48px;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    height: 48px;
 }
-
 .navbarmenu {
-  width: 100%;
-  height: 48px;
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
 }
 
 .toprbutton {
-  padding: 10px;
-  border-left: 1px solid rgb(180, 180, 180);
+    padding: 10px;
+    border-left: 1px solid rgb(180, 180, 180);
 }
 
 .toprbutton:hover {
-  background-color: rgb(204, 204, 204);
+    background-color: rgb(204, 204, 204);
 }
-
 .dropbtn {
-  background-color: black;
-  color: grey;
-  font-size: 20px;
-  font-weight: bold;
-  border: none;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background-color: black;
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+  
 .dropdown {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 48px;
-  width: 150px;
-  padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 48px;
+    width: 150px;
+    padding: 0;
 }
-
+  
 .dropdown-content {
-  display: none;
-  background-color: #000;
-  font-size: 13px;
+    display: none;
+    background-color: #000000;
+    font-size: 13px;
+}
+  
+.dropdown-content a {
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+.dropdown-content a:hover {
+    color: white;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;  
+}
+  
+.dropdown:hover .dropbtn {
+    color: white;
+    background-image: url("https://i.imgur.com/rwEdw6N.gif?noredirect");
+    background-size: cover;
+    padding: 13px;
 }
 
-.dropdown-content a {
-  color: grey;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: inline-block;
+.centermenu {
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
+}
+
+.navigation{
+    color: grey;
+}
+
+.nvbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90px;
+}
+
+.nvaddbar {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gold;
 }
 
 .nvaddbar a {
     color: black;
-  }
-
-.dropdown-content a:hover {
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.dropdown:hover .dropbtn {
-  color: white;
-  background-image: url("https://i.imgur.com/rwEdw6N.gif?noredirect");
-  background-size: cover;
-  padding: 13px;
-}
-
-.centermenu {
-  float: left;
-  justify-content: space-evenly;
-  width: 450px;
-  align-items: center;
-  font-size: 12px;
-  font-weight: bold;
-  display: none;
-}
-
-.navigation {
-  color: grey;
-}
-
-.nvbutton {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  width: 90px;
-}
-
-.nvaddbar {
-  height: 55px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: gold;
 }
 
 .menuicon {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width:auto;
 }
 
 .topmenu {
-  display: none;
+    display: none;
 }
 
 .entiremenu {
-  height: 48px;
+    height: 48px;
 }
 
 li {
-  text-align: center;
+    text-align: center;
 }
 
-@media screen and (min-width: 650px) {
-  .centermenu {
-    display: flex;
-    height: 48px;
-  }
-
-  .nvbutton {
-    height: 48px;
-  }
-
-  .entiremenu {
-    height: 80px;
-    float: right;
+.funding {
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-  }
+    justify-content: center;
+    max-width: 1252px;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  #navigationmenu {
-    display: none;
-  }
+#afundtittle {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Avalon,sans-serif;
+    color: #f42;
+}
 
-  .menuicon {
+.fundtittle {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 48px;
-  }
+    flex-direction: column;
+    margin-bottom: 15px;
+}
 
-  .navbarmenu {
-    height: 80px;
-  }
-
-  .topmenu {
+.morefund {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-flow: column;
+}
+
+.morefundchild {
+    margin: 10px;
+    font-family: Avalon,sans-serif;
+    font-size: 15px;
+    color: #f42;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.fundbox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.fundboxchild {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.orangebar {
+    background-color: #f42;
     height: 35px;
-    align-items: center;
-    background-color: #131313;
+    max-height: 35px;
+    padding-left: 84px;
+    padding-top: 10px;
     color: white;
-    padding: 0 10px 0 10px;
-  }
+    font-weight: bold;
+    font-family: Avalon,sans-serif;
+    font-size: 18px;
+    text-align: left;
+}
 
-  .topmenul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 0;
-    font-size: 13px;
-    justify-content: space-between;
-    width: 370px;
-  }
-
-  .topmenur {
-    display: flex;
-    padding: 0;
-    flex-direction: row;
-    list-style: none;
-    font-size: 13px;
-    justify-content: space-between;
-    width: 170px;
-  }
-
-  .topmenul a {
-    color: #b9b9b9;
-  }
-
-  .topmenur a {
-    color: rgb(204, 204, 204);
-  }
-
-  .news {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .dropbtn {
-    height: 80px;
-  }
-
-  .dropdown {
-      height: 80px;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: none;
-  }
-
-  .eventdropdown {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 20px;
-  }
-
-  .eventscontent {
-    display: none;
-  }
-
-  .eventscontent a {
-    color: grey;
-    padding: 0;
-    text-decoration: none;
-    display: inline-block;
-  }
-
-  .centermenu a:hover {
+.pinkbartext {
+    font-weight: bold;
+    font-family: Avalon,sans-serif;
+    font-size: 15;
     color: black;
-  }
+    text-align: left;
+}
 
-  .eventscontent:hover {
-    color: white;
+.pinkbar {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    background-color: #131313;
-    margin-top: 20px;
-  }
+    align-items: flex-start;
+    background-color: rgb(241, 223, 220);
+    height: 45px;
+    max-height: 45px;
+    padding-left: 84px;
+    padding-top: 10px;
+}
 
-  .eventdropdown:hover .eventscontent {
+.pinkbar2 {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(255, 246, 245);
+    height: 60px;
+    max-height: 60px;
+    padding: 15px;
+    border-bottom: 1px solid #f42;
+}
+
+.pinkbar3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(255, 246, 245);
+    min-height: max-content;
+    max-height: 85px;
+    padding: 15px;
+
+}
+
+.pinkbartext2 {
+    font-family: Avalon,sans-serif;
+    font-size: 13;
+    color: rgb(77, 77, 77);
+    text-align: left;
+    margin-bottom: 15px;
+    height: 40px;
+    max-height: 40px;
+}
+
+.picturebar {
     position: absolute;
-    background-color: #131313;
-    margin-top: 20px;
-  }
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
 
-  .eventscontent a:hover {
-    color: white;
-  }
+.imagesize {
+    max-width: 60px;
+    max-width: 60px;
+}
 
-  .topmenul li a:hover {
-    color: white;
-  }
+.iconfund {
+    width: 13px;
+    padding-right: 10px;
+}
 
-  .topmenur li a:hover {
-    color: white;
-  }
+#fundbox4 {
+    display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .dropdown {
-    display: none;
-  }
+    .dropdown {
+        display: none;
+        width: 66px;
+    }
+
+    #fundbox4 {
+        display: flex;
+    }
+
+    .fundtittle {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 /* Footer section 
@@ -369,4 +375,7 @@ li {
         margin: 0;
     }
 }
+
+/* Latest Funding section 
+-------------------------------------------------------------------*/
 

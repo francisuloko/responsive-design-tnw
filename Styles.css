@@ -21,7 +21,7 @@ body {
   height: 48px;
   display: flex;
   flex-flow: row;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .toprbutton {
@@ -61,7 +61,7 @@ body {
 
 .dropdown-content {
   display: none;
-  background-color: #000000;
+  background-color: #000;
   font-size: 13px;
   margin: 0;
 }
@@ -79,7 +79,7 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .dropdown:hover .dropbtn {
@@ -91,7 +91,6 @@ body {
 
 .centermenu {
   float: left;
-  display: flex;
   justify-content: space-evenly;
   width: 450px;
   align-items: center;
@@ -100,7 +99,7 @@ body {
   display: none;
 }
 
-.navigation{
+.navigation {
   color: grey;
 }
 
@@ -130,7 +129,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width:auto;
+  width: auto;
   margin: 0;
   height: 48px;
 }
@@ -150,8 +149,6 @@ li {
 
 .funding {
   background-color: rgb(255, 255, 255);
-  margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,7 +161,7 @@ li {
 #afundtittle {
   font-size: 26px;
   font-weight: bold;
-  font-family: Avalon,sans-serif;
+  font-family: Avalon, sans-serif;
   color: #f42;
 }
 
@@ -181,7 +178,7 @@ li {
 
 .morefundchild {
   margin: 10px;
-  font-family: Avalon,sans-serif;
+  font-family: Avalon, sans-serif;
   font-size: 15px;
   color: #f42;
 }
@@ -199,7 +196,7 @@ li {
 
 .fundboxchild {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .orangebar {
@@ -210,15 +207,15 @@ li {
   padding-top: 10px;
   color: white;
   font-weight: bold;
-  font-family: Avalon,sans-serif;
+  font-family: Avalon, sans-serif;
   font-size: 18px;
   text-align: left;
 }
 
 .pinkbartext {
   font-weight: bold;
-  font-family: Avalon,sans-serif;
-  font-size: 15;
+  font-family: Avalon, sans-serif;
+  font-size: 15PX;
   color: black;
   text-align: left;
 }
@@ -256,8 +253,8 @@ li {
 }
 
 .pinkbartext2 {
-  font-family: Avalon,sans-serif;
-  font-size: 13;
+  font-family: Avalon, sans-serif;
+  font-size: 13PX;
   color: rgb(77, 77, 77);
   text-align: left;
   margin-bottom: 15px;
@@ -273,7 +270,6 @@ li {
 }
 
 .imagesize {
-  max-width: 60px;
   max-width: 60px;
 }
 
@@ -315,7 +311,7 @@ li {
   .menuicon {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     height: 48px;
   }
 
@@ -328,7 +324,6 @@ li {
     flex-direction: row;
     justify-content: space-between;
     height: 35px;
-    padding: 0;
     align-items: center;
     background-color: #131313;
     color: white;
@@ -339,7 +334,7 @@ li {
     display: flex;
     flex-direction: row;
     list-style: none;
-    padding: 0px;
+    padding: 0;
     font-size: 13px;
     justify-content: space-between;
     width: 370px;
@@ -373,13 +368,13 @@ li {
     flex-direction: column;
     text-align: center;
   }
-    
+
   .dropbtn, .dropdown {
     height: 80px;
   }
 
   .dropdown:hover .dropdown-content {
-    display: none; 
+    display: none;
   }
 
   .eventdropdown {
@@ -398,7 +393,7 @@ li {
     border-top: 1px solid rgb(170, 170, 170);
     text-align: left;
     color: grey;
-    padding: 10PX;
+    padding: 10px;
     width: 115px;
     text-decoration: none;
     display: inline-block;
@@ -421,7 +416,7 @@ li {
     margin-top: 20px;
   }
 
-  .eventscontent a:hover{
+  .eventscontent a:hover {
     color: white;
   }
 
@@ -457,11 +452,11 @@ li {
     border-left: 1px solid #f42;
     border-right: 1px solid #f42;
     margin: 10px;
-    font-family: Avalon,sans-serif;
+    font-family: Avalon, sans-serif;
     font-size: 15px;
     color: #f42;
   }
-} 
+}
 
 @media screen and (min-width: 1024px) {
   .dropdown {
@@ -479,13 +474,12 @@ li {
   }
 }
 
-/* Highlight Section
--------------------------------------------------------------------*/
+/* Highlight Section------------------------------------------------------------------- */
 @font-face {
   font-family: tnw;
   src: url("Audiowide-Regular.ttf");
 }
-  
+
 div {
   margin: 10px auto;
 }
@@ -528,7 +522,7 @@ div {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.5)
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .tnw-img {
@@ -552,17 +546,17 @@ span {
   gap: 10px;
 }
 
-/* Media queries for highlights section 
-------------------------------------------------------------------------*/
+/* Media queries for highlights section------------------------------------------------------------------------ */
 @media screen and (min-width: 822px) {
   div {
-    margin: 0px;
+    margin: 0;
   }
 
   .flex {
     display: flex;
     justify-content: center;
   }
+
   .highlights {
     position: relative;
     top: 150px;
@@ -570,8 +564,9 @@ span {
     grid-template-columns: 2fr 1fr;
     gap: 5px;
     width: 98%;
-    margin: 0px auto;
+    margin: 0 auto;
   }
+
   .main-feature,
   .sub-feature {
     height: 100%;
@@ -586,13 +581,13 @@ span {
     margin: 0;
     padding: 5px 0;
   }
-    
+
   .sub-feature h3 {
     font-size: 22px;
     margin: 0;
     padding: 10px 0;
   }
-    
+
   .sub-feature {
     gap: 5px;
     flex-direction: column;
@@ -600,12 +595,12 @@ span {
 
   .publication,
   span {
-    font-size: .8rem;
+    font-size: 0.8rem;
     display: flex;
     align-items: center;
     font-weight: bold;
     gap: 5px;
-  }    
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -634,12 +629,6 @@ span {
     width: 90%;
   }
 
-  .main-feature h3 {
-    font-size: 52px;
-    margin: 0;
-    padding: 5px 0;
-  }
-
   .sub-feature h3 {
     font-size: 28px;
     margin: 0;
@@ -648,9 +637,7 @@ span {
   }
 }
 
-
-/* Footer section 
--------------------------------------------------------------------*/
+/* Footer section------------------------------------------------------------------- */
 .tnw-footer {
   position: relative;
   bottom: 0;
@@ -685,7 +672,7 @@ span {
   background-color: #131313;
 }
 
-.social-icons li{
+.social-icons li {
   margin: 10px;
 }
 
@@ -735,7 +722,7 @@ span {
   .social-icons li svg,
   .social-icons li img {
     width: 12px;
-    height: 12px;;
+    height: 12px;
     padding: 10px;
     border-radius: 50%;
     background-color: #555;

@@ -2,9 +2,11 @@ a {
     text-decoration: none;
 }
 
-.head {
+header {
     position: fixed;
     width: 100%;
+    background-color: white;
+    z-index: 5;
 }
 
 body {
@@ -124,7 +126,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 100%;
+    width:auto;
 }
 
 .topmenu {
@@ -138,6 +140,147 @@ body {
 li {
     text-align: center;
 }
+
+.funding {
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1252px;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#afundtittle {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Avalon,sans-serif;
+    color: #f42;
+}
+
+.fundtittle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.morefund {
+    display: flex;
+    flex-flow: column;
+}
+
+.morefundchild {
+    margin: 10px;
+    font-family: Avalon,sans-serif;
+    font-size: 15px;
+    color: #f42;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.fundbox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.fundboxchild {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.orangebar {
+    background-color: #f42;
+    height: 35px;
+    max-height: 35px;
+    padding-left: 84px;
+    padding-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: Avalon,sans-serif;
+    font-size: 18px;
+    text-align: left;
+}
+
+.pinkbartext {
+    font-weight: bold;
+    font-family: Avalon,sans-serif;
+    font-size: 15;
+    color: black;
+    text-align: left;
+}
+
+.pinkbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(241, 223, 220);
+    height: 45px;
+    max-height: 45px;
+    padding-left: 84px;
+    padding-top: 10px;
+}
+
+.pinkbar2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(255, 246, 245);
+    height: 60px;
+    max-height: 60px;
+    padding: 15px;
+    border-bottom: 1px solid #f42;
+}
+
+.pinkbar3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(255, 246, 245);
+    min-height: max-content;
+    max-height: 85px;
+    padding: 15px;
+
+}
+
+.pinkbartext2 {
+    font-family: Avalon,sans-serif;
+    font-size: 13;
+    color: rgb(77, 77, 77);
+    text-align: left;
+    margin-bottom: 15px;
+    height: 40px;
+    max-height: 40px;
+}
+
+.picturebar {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.imagesize {
+    max-width: 60px;
+    max-width: 60px;
+}
+
+.iconfund {
+    width: 13px;
+    padding-right: 10px;
+}
+
+#fundbox4 {
+    display: none;
+}
+
 @media screen and (min-width: 650px) {
     .centermenu {
         display: flex;
@@ -195,7 +338,6 @@ li {
         font-size: 13px;
         justify-content: space-between;
         width: 370px;
-        
     }
 
     .topmenur {
@@ -248,8 +390,11 @@ li {
     }
 
     .eventscontent a {
+        border-top: 1px solid rgb(170, 170, 170);
+        text-align: left;
         color: grey;
-        padding: 0;
+        padding: 10PX;
+        width: 115px;
         text-decoration: none;
         display: inline-block;
     }
@@ -282,10 +427,47 @@ li {
     .topmenur li a:hover {
         color: white;
     }
+
+    .boxes {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .fundbox {
+        border: 1px solid black;
+        max-width: 300px;
+        margin: 3px;
+    }
+
+    #fundbox4 {
+        display: none;
+    }
+
+    .morefund {
+        flex-flow: row;
+    }
+
+    .getupdates {
+        margin-top: 10;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-left: 1px solid #f42;
+        border-right: 1px solid #f42;
+    }
 } 
 
 @media screen and (min-width: 1024px) {
     .dropdown {
         display: none;
+        width: 66px;
+    }
+
+    #fundbox4 {
+        display: flex;
+    }
+
+    .fundtittle {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }

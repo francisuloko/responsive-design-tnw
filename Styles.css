@@ -68,6 +68,10 @@ body {
     display: inline-block;
 }
   
+.nvaddbar {
+    height: 35px;
+}
+
 .dropdown-content a:hover {
     color: white;
 }
@@ -138,6 +142,7 @@ body {
 li {
     text-align: center;
 }
+
 @media screen and (min-width: 650px) {
     .centermenu {
         display: flex;
@@ -156,10 +161,6 @@ li {
         width: 100%;
     }
 
-    .centermenu a:hover {
-        color: black;
-    }
-
     #navigationmenu {
         display: none;
     }
@@ -167,7 +168,7 @@ li {
     .menuicon {
         display: flex;
         flex-direction: row;
-        justify-content:space-between;
+        justify-content: space-between;
         height: 48px;
     }
 
@@ -180,7 +181,6 @@ li {
         flex-direction: row;
         justify-content: space-between;
         height: 35px;
-        padding: 0;
         align-items: center;
         background-color: #131313;
         color: white;
@@ -195,7 +195,6 @@ li {
         font-size: 13px;
         justify-content: space-between;
         width: 370px;
-        
     }
 
     .topmenur {
@@ -216,10 +215,6 @@ li {
         color: rgb(204, 204, 204);
     }
 
-    .nvaddbar {
-        height: 35px;
-    }
-
     .news {
         position: relative;
         display: flex;
@@ -235,7 +230,6 @@ li {
         display: none; 
     }
 
-
     .eventdropdown {
         position: relative;
         display: flex;
@@ -243,6 +237,7 @@ li {
         text-align: center;
         height: 20px;
     }
+
     .eventscontent {
         display: none;
     }
@@ -254,12 +249,8 @@ li {
         display: inline-block;
     }
 
-    .eventdropdown:hover .eventscontent {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background-color: #131313;
-        margin-top: 20px;
+    .centermenu a:hover {
+        color: black;
     }
 
     .eventscontent:hover {
@@ -271,7 +262,15 @@ li {
         margin-top: 20px;
     }
 
-    .eventscontent a:hover{
+    .eventdropdown:hover .eventscontent {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #131313;
+        margin-top: 20px;
+    }
+
+    .eventscontent a:hover {
         color: white;
     }
 
@@ -282,10 +281,11 @@ li {
     .topmenur li a:hover {
         color: white;
     }
-} 
+}
 
 @media screen and (min-width: 1024px) {
     .dropdown {
         display: none;
     }
+
 }

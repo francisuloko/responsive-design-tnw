@@ -149,7 +149,6 @@ li {
     flex-direction: column;
     justify-content: center;
     max-width: 1252px;
-    border: 1px solid red;
     margin-left: auto;
     margin-right: auto;
 }
@@ -281,6 +280,181 @@ li {
     display: none;
 }
 
+
+@media screen and (min-width: 650px) {
+    .centermenu {
+        display: flex;
+        height: 48px;
+    }
+
+    .nvbutton {
+        height: 48px;
+    }
+
+    .entiremenu {
+        height: 80px;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .centermenu a:hover {
+        color: black;
+    }
+
+    #navigationmenu {
+        display: none;
+    }
+
+    .menuicon {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        height: 48px;
+    }
+
+    .navbarmenu {
+        height: 80px;
+    }
+
+    .topmenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 35px;
+        padding: 0;
+        align-items: center;
+        background-color: #131313;
+        color: white;
+        padding: 0 10px 0 10px;
+    }
+
+    .topmenul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 0px;
+        font-size: 13px;
+        justify-content: space-between;
+        width: 370px;
+    }
+
+    .topmenur {
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        list-style: none;
+        font-size: 13px;
+        justify-content: space-between;
+        width: 170px;
+    }
+
+    .topmenul a {
+        color:#b9b9b9;
+    }
+
+    .topmenur a {
+        color: rgb(204, 204, 204);
+    }
+
+    .nvaddbar {
+        height: 35px;
+    }
+
+    .news {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .dropbtn, .dropdown {
+        height: 80px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none; 
+    }
+
+
+    .eventdropdown {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 20px;
+    }
+    .eventscontent {
+        display: none;
+    }
+
+    .eventscontent a {
+        border-top: 1px solid rgb(170, 170, 170);
+        text-align: left;
+        color: grey;
+        padding: 10PX;
+        width: 115px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .eventdropdown:hover .eventscontent {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #131313;
+        margin-top: 20px;
+    }
+
+    .eventscontent:hover {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #131313;
+        margin-top: 20px;
+    }
+
+    .eventscontent a:hover{
+        color: white;
+    }
+
+    .topmenul li a:hover {
+        color: white;
+    }
+
+    .topmenur li a:hover {
+        color: white;
+    }
+
+    .boxes {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .fundbox {
+        max-width: 300px;
+        margin: 3px;
+    }
+
+    #fundbox4 {
+        display: none;
+    }
+
+    .morefund {
+        flex-flow: row;
+    }
+
+    .getupdates {
+        margin-top: 10;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-left: 1px solid #f42;
+        border-right: 1px solid #f42;
+    }
+} 
+
 @media screen and (min-width: 1024px) {
     .dropdown {
         display: none;
@@ -332,18 +506,23 @@ li {
     background-color: #131313;
 }
 
-.social-icons li {
+.social-icons li{
     background-color: #555;
-    padding: 10px;
+    padding: 9px;
     margin: 10px;
     border-radius: 50%;
-    display: block;
+    border: 2px solid #555;
+}
+
+.social-icons a {
+    position: relative;
+    top: 2px;
+    left: 2px;
 }
 
 .social-icons li:hover {
     background-color: #000;
     border-radius: 50%;
-
 }
 
 .copyright {
@@ -375,7 +554,3 @@ li {
         margin: 0;
     }
 }
-
-/* Latest Funding section 
--------------------------------------------------------------------*/
-

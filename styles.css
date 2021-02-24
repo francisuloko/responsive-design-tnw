@@ -590,7 +590,9 @@ span {
   display: flex;
   align-items: center;
   font-weight: bold;
-  gap: 10px;
+  color: lightgrey;
+  gap: 20px;
+  margin: 4px;
 }
 
 @media screen and (min-width: 822px) {
@@ -786,7 +788,7 @@ span {
 
 .copyright {
   background-color: #000;
-  color: #fff;
+  color: grey;
   font-size: 13px;
   padding: 20px 20px 20px 65px;
 }
@@ -829,4 +831,9 @@ span {
   background-color: rgb(9, 5, 255);
   padding: 10px;
   z-index: 20;
+}
+
+.tnw-copyright {
+  font-family: tnw, 'Times New Roman', Times, serif;
+  font-weight: bolder;
 }

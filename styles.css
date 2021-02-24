@@ -2,13 +2,13 @@ a {
   text-decoration: none;
 }
 
-header {
+.headerbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: white;
-  z-index: 5;
+  z-index: 100;
 }
 
 body {
@@ -166,6 +166,7 @@ li {
 }
 
 .funding {
+  z-index: 0;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -173,7 +174,7 @@ li {
   max-width: 1252px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 300px;
+  padding: 10px;
 }
 
 #afundtittle {
@@ -181,6 +182,12 @@ li {
   font-weight: bold;
   font-family: Avalon, sans-serif;
   color: #f42;
+  padding-top: 0;
+}
+
+h2 {
+  padding-top: 0;
+  margin: 0;
 }
 
 .fundtittle {
@@ -204,6 +211,7 @@ li {
 .boxes {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .fundbox {
@@ -298,6 +306,19 @@ li {
 
 #fundbox4 {
   display: none;
+}
+
+.getupdates {
+  margin: 10px;
+  font-family: Avalon, sans-serif;
+  font-size: 15px;
+  color: #f42;
+}
+
+.getupdates:hover,
+.morefundchild:hover,
+#afundtittle:hover {
+  color: black;
 }
 
 @media screen and (min-width: 822px) {
@@ -471,6 +492,7 @@ li {
   .getupdates {
     padding-left: 10px;
     padding-right: 10px;
+    margin: 10px;
     border-left: 1px solid #f42;
     border-right: 1px solid #f42;
     margin: 10px;
@@ -506,14 +528,14 @@ div {
 }
 
 .highlights {
-  position: relative;
-  top: 100px;
+  clear: both;
   width: auto;
-  margin: 10px;
-  z-index: 1;
+  z-index: 0;
   padding: 0;
   flex-grow: 1;
-  height: 750px;
+  height: 760px;
+  margin-top: 110px;
+  margin-bottom: 50px;
 }
 
 .feature-logo {
@@ -550,7 +572,7 @@ div {
   width: 100%;
   height: 100%;
   background: rgba(148, 33, 33, 0.1);
-  background-image: linear-gradient(135deg, rgba(255, 0, 0, 0.9), rgba(148, 33, 33, 0.8), rgba(120, 0, 0,0.4) 60%, rgba(0,0,0,0.9), rgba(0,0,0,1));
+  background-image: linear-gradient(to bottom,rgba(87, 86, 86, 0.2), rgba(0,0,0,1));
 }
 
 .overlay {
@@ -567,6 +589,11 @@ div {
 
 .date {
   display: none;
+}
+
+.highlighicon {
+  width: 16px;
+  height: 16px;
 }
 
 .tnw-img {
@@ -607,9 +634,7 @@ span {
   }
 
   .highlights {
-    position: relative;
-    top: 150px;
-    margin: 10px;
+    margin-top: 120px;
     height: 480px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -618,6 +643,7 @@ span {
 
   .main-feature {
     height: 300px;
+    height: 480px;
     max-height: 480px;
   }
 
@@ -655,7 +681,7 @@ span {
   .feature-logo {
     position: absolute;
     z-index: 9;
-    top: 80px;
+    top: 190px;
     left: 20px;
     display: block;
     font-size: 150px;
@@ -669,7 +695,7 @@ span {
     display: block;
     position: absolute;
     z-index: 13;
-    top: 50px;
+    top: 10px;
     right: 20px;
     color: #fff;
     font-size: 18px;
@@ -677,7 +703,7 @@ span {
   }
 
   .sub-feature .tnw-card {
-    height: 248px;
+    height: 242px;
   }
 
   .highlights {
@@ -708,6 +734,10 @@ span {
     margin: 0;
     padding: 10px 0;
     width: 90%;
+  }
+
+  .overlay-main {
+    background-image: linear-gradient(135deg, rgba(255, 0, 0, 0.9), rgba(148, 33, 33, 0.8), rgba(120, 0, 0,0.4) 60%, rgba(0,0,0,0.9), rgba(0,0,0,1));
   }
 }
 

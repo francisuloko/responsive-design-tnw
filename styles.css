@@ -12,8 +12,14 @@ header {
 }
 
 body {
-  padding: 0;
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'highlightsbox'
+  'funding'
+  'footer';
   margin: 0;
+  padding: 0;
 }
 
 .navbarmenu {
@@ -508,7 +514,7 @@ div {
 
 .highlights {
   position: relative;
-  top: 100px;
+  top: 50px;
   width: auto;
   margin: 10px;
   z-index: 1;
@@ -584,10 +590,10 @@ span {
   }
 
   .highlights {
-    position: relative;
-    top: 150px;
     margin: 10px;
+    top: 50px;
     height: 480px;
+    width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 5px;

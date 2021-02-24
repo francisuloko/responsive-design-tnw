@@ -14,16 +14,17 @@ Highlight
 Latest funding
 Every single part of the project was done so it's responsive to different size screen devices like cellphones, tablets, and big monitor desktops.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./ScreenshotRWD.png)
 
 ## Built With
 
 - HTML
 - CSS
+- Technology - git and github
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://francisuloko.github.io/responsive-design-tnw/)
 
 ## Authors
 

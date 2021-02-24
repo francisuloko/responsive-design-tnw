@@ -87,18 +87,6 @@ body {
   left: 2px;
 }
 
-.menu-links a {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'Courier New', Courier, monospace;
-  color: whitesmoke;
-  margin: 5px;
-}
-
-.dropdown-content a:hover {
-  color: white;
-}
-
 .dropdown:hover .dropdown-content {
   display: flex;
   flex-direction: column;
@@ -495,7 +483,6 @@ h2 {
     margin: 10px;
     border-left: 1px solid #f42;
     border-right: 1px solid #f42;
-    margin: 10px;
     font-family: Avalon, sans-serif;
     font-size: 15px;
     color: #f42;
@@ -572,7 +559,9 @@ div {
   width: 100%;
   height: 100%;
   background: rgba(148, 33, 33, 0.1);
-  background-image: linear-gradient(to bottom,rgba(87, 86, 86, 0.2), rgba(0,0,0,1));
+  background-image: linear-gradient(to bottom,
+  rgba(87, 86, 86, 0.2),
+  rgba(0,0,0,1));
 }
 
 .overlay {
@@ -584,7 +573,9 @@ div {
   width: 100%;
   height: 100%;
   background: rgba(87, 86, 86, 0.2);
-  background-image: linear-gradient(to bottom,rgba(87, 86, 86, 0.2), rgba(0,0,0,1));
+  background-image: linear-gradient(to bottom,
+  rgba(87, 86, 86, 0.2),
+  rgba(0,0,0,1));
 }
 
 .date {
@@ -608,8 +599,21 @@ div {
   color: #fff;
 }
 
+.menu-links a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  margin: 5px;
+  font-weight: 600;
+}
+
 .caption h3 a {
   color: #fff;
+}
+
+.dropdown-content a:hover {
+  color: white;
 }
 
 .publication,
@@ -736,7 +740,12 @@ span {
   }
 
   .overlay-main {
-    background-image: linear-gradient(135deg, rgba(255, 0, 0, 0.9), rgba(148, 33, 33, 0.8), rgba(120, 0, 0,0.4) 60%, rgba(0,0,0,0.9), rgba(0,0,0,1));
+    background-image: linear-gradient(135deg,
+    rgba(255, 0, 0, 0.9),
+    rgba(148, 33, 33, 0.8),
+    rgba(120, 0, 0,0.4) 60%,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,1));
   }
 }
 
@@ -767,15 +776,10 @@ span {
   align-items: center;
 }
 
-.copyright {
-  text-align: center;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .social-icons {
   padding: 5px;
   margin: 5px auto;
+  background-color: #131313;
 }
 
 .icon-nav {
@@ -787,10 +791,6 @@ span {
   background-color: #131313;
   padding: 10px;
   margin: 0;
-}
-
-.social-icons {
-  background-color: #131313;
 }
 
 .social-icons li svg,
@@ -808,11 +808,6 @@ span {
   background-color: black;
 }
 
-.menu-links a {
-  color: grey;
-  font-weight: 600;
-}
-
 .menu-links a:hover {
   color: #fff;
 }
@@ -822,6 +817,9 @@ span {
   color: grey;
   font-size: 13px;
   padding: 20px 20px 20px 65px;
+  text-align: center;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 822px) {

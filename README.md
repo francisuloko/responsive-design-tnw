@@ -14,7 +14,7 @@ Highlight
 Latest funding
 Every single part of the project was done so it's responsive to different size screen devices like cellphones, tablets, and big monitor desktops.
 
-![screenshot](./screenshotRWD)
+![screenshot](./ScreenshotRWD.png)
 
 ## Built With
 

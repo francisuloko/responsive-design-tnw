@@ -761,3 +761,13 @@ span {
     margin: 0;
   }
 }
+
+.access img {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: rgb(9, 5, 255);
+  padding: 10px;
+  z-index: 20;
+}

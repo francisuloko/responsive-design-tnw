@@ -642,10 +642,6 @@ span {
   }
 
   .main-feature {
-<<<<<<< HEAD
-=======
-    height: 300px;
->>>>>>> 3610fd0154eac8ffb29fd63da696ff347457b2ed
     height: 480px;
     max-height: 480px;
   }

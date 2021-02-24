@@ -560,12 +560,11 @@ div {
   height: 100%;
   background: rgba(148, 33, 33, 0.1);
   background-image:
-      linear-gradient
-      (
-      to bottom, 
+    linear-gradient
+    (
       rgba(155, 148, 148, 0.2), 
       rgba(0,0,0,1)
-      );
+    );
 }
 
 .overlay {
@@ -578,12 +577,12 @@ div {
   height: 100%;
   background: rgba(87, 86, 86, 0.2);
   background-image:
-      linear-gradient
-      (
-      to bottom, 
+  linear-gradient
+    (
+      to bottom,
     rgba(87, 86, 86, 0.2), 
     rgba(0,0,0,1)
-      );
+    );
 }
 
 .date {
@@ -749,8 +748,8 @@ span {
 
   .overlay-main {
     background-image:
-        linear-gradient
-        (
+      linear-gradient
+      (
         135deg, 
       rgba(255, 0, 0, 0.9), 
       rgba(148, 33, 33, 0.8), 

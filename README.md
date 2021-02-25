@@ -1,6 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+# Project 1: Positioning and Floating Elements
 # responsive-design-tnw
+
+> Learning how to make web page responsive on different screens
 
 > The project consists of cloning the webpage from the following link:
 
@@ -16,15 +19,27 @@ Every single part of the project was done so it's responsive to different size s
 
 ![screenshot](./ScreenshotRWD.png)
 
+
 ## Built With
 
-- HTML
-- CSS
+- Languages - HTML, CSS
+- Frameworks - N/A
 - Technology - git and github
 
 ## Live Demo
 
 [Live Demo Link](https://francisuloko.github.io/responsive-design-tnw/)
+
+To get a local copy up and running follow these simple example steps.
+
+### Go to github.com/francisuloko/responsive-design-tnw/
+
+### Click Code button
+
+### Open Terminal on your machine
+
+### Enter git clone <repo path>
+
 
 ## Authors
 
@@ -52,9 +67,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Code Reviewers and StandUp team
 
 ## 📝 License
 

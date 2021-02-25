@@ -1,7 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project 1: Positioning and Floating Elements
-# responsive-design-tnw
+# Project 2: Building with Responsive Web Design - Milestone 1
 
 > Learning how to make web page responsive on different screens
 

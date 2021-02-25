@@ -2,6 +2,10 @@ a {
   text-decoration: none;
 }
 
+h2 a {
+  color: #fff;
+}
+
 .headerbar {
   position: fixed;
   top: 0;
@@ -515,14 +519,11 @@ div {
 }
 
 .highlights {
-  clear: both;
-  width: auto;
-  z-index: 0;
-  padding: 0;
-  flex-grow: 1;
-  height: 760px;
-  margin-top: 110px;
-  margin-bottom: 50px;
+  position: relative;
+  top: 100px;
+  width: 98%;
+  margin: auto;
+  margin-bottom: 350px;
 }
 
 .feature-logo {
@@ -532,14 +533,27 @@ div {
 
 .main-feature,
 .sub-feature {
-  height: 250px;
-  max-height: 500px;
+  height: 150px;
 }
 
 .main-feature h3,
 .sub-feature h3 {
   margin: 0;
-  padding: 5px 0;
+  padding: 0;
+}
+
+.menu-links a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  margin: 5px;
+  font-weight: 600;
+}
+
+.main-feature h3 a,
+.sub-feature h3 a {
+  color: #fff;
 }
 
 .sub-feature {
@@ -580,11 +594,6 @@ div {
   display: none;
 }
 
-.highlighicon {
-  width: 16px;
-  height: 16px;
-}
-
 .tnw-img {
   width: 100%;
   height: 100%;
@@ -592,25 +601,9 @@ div {
 
 .caption {
   position: absolute;
-  top: 150px;
+  bottom: 10px;
   left: 10px;
   color: #fff;
-}
-
-.caption2 {
-  position: absolute;
-  top: 150px;
-  left: 10px;
-  color: #fff;
-}
-
-.menu-links a {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'Courier New', Courier, monospace;
-  color: whitesmoke;
-  margin: 5px;
-  font-weight: 600;
 }
 
 .caption h3 a {
@@ -628,8 +621,13 @@ span {
   align-items: center;
   font-weight: bold;
   color: lightgrey;
-  gap: 20px;
-  margin: 4px;
+  gap: 10px;
+  margin: 4px 0;
+}
+
+.highlighicon {
+  width: 16px;
+  height: 16px;
 }
 
 @media screen and (min-width: 822px) {
@@ -637,35 +635,44 @@ span {
     margin: 0;
   }
 
-  .caption {
+  .overlay-main {
     position: absolute;
     top: 0;
-    left: 10px;
-    color: #fff;
+    left: 0;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(148, 33, 33, 0.1);
+    background-image: linear-gradient(to bottom, rgba(87, 86, 86, 0.2), rgba(0, 0, 0, 1));
   }
 
-  .caption2 {
+  .overlay {
     position: absolute;
-    top: 360px;
-    left: 10px;
-  }
-
-  .flex {
-    display: flex;
-    justify-content: center;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(87, 86, 86, 0.2);
+    background-image: linear-gradient(to bottom, rgba(87, 86, 86, 0.2), rgba(0, 0, 0, 1));
   }
 
   .highlights {
-    margin-top: 120px;
-    height: 480px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    height: 300px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 5px;
+    top: 100px;
   }
 
   .main-feature {
-    height: 480px;
-    max-height: 480px;
+    margin: 0;
+    padding: 0;
+    height: 250px;
   }
 
   .main-feature h3 {
@@ -677,15 +684,19 @@ span {
   .sub-feature h3 {
     font-size: 22px;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
   }
 
   .sub-feature {
-    gap: 5px;
+    display: flex;
     flex-direction: column;
+    gap: 5px;
     padding: 0;
-    height: 480px;
-    max-height: 480px;
+    height: 150px;
+  }
+
+  .sub-feature .tnw-card {
+    height: 122px;
   }
 
   .publication,
@@ -696,53 +707,48 @@ span {
     font-weight: bold;
     gap: 5px;
   }
-
-  .sub-feature a div {
-    height: 238px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
+  .highlights {
+    height: 400px;
+    margin-bottom: 150px;
+  }
+
+  .main-feature {
+    position: relative;
+    height: 405px;
+  }
+
   .feature-logo {
     position: absolute;
     z-index: 9;
-    top: 190px;
-    left: 20px;
+    top: 5px;
+    left: 10px;
     display: block;
-    font-size: 150px;
+    font-size: 120px;
     color: #fff;
     padding: 0;
     margin: 0;
-    line-height: 30px;
   }
 
   .date {
     display: block;
     position: absolute;
     z-index: 13;
-    top: 10px;
+    top: 20px;
     right: 20px;
     color: #fff;
     font-size: 18px;
     font-weight: 400;
   }
 
-  .sub-feature {
-    height: 480px;
+  .sub-feature .tnw-card {
+    height: 200px;
   }
 
   .sub-feature a div {
     height: 247px;
-  }
-
-  .highlights {
-    height: 500px;
-    max-height: 500px;
-  }
-
-  .main-feature {
-    height: 500px;
-    max-height: 500px;
   }
 
   .main-feature h3 {
@@ -762,12 +768,6 @@ span {
 
   .overlay-main {
     background-image: linear-gradient(135deg, rgba(255, 0, 0, 0.9), rgba(148, 33, 33, 0.8), rgba(120, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
-  }
-
-  .caption2 {
-    position: absolute;
-    top: 60%;
-    padding: 0;
   }
 }
 
